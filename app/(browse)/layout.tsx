@@ -1,5 +1,6 @@
 import { UserButton } from "@clerk/nextjs";
 import { Navbar } from "./_components/navbar";
+import { Sidebar } from "./_components/sidebar";
 
 const BrowseLayout = ({
     children
@@ -10,6 +11,7 @@ const BrowseLayout = ({
         <>
             <Navbar />
             <div className="flex h-full pt-20">
+                <Sidebar />
                 {children}
             </div>
         </>
